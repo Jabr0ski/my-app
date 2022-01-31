@@ -1,3 +1,4 @@
+
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
@@ -7,10 +8,6 @@ ol, ul {
   padding-left: 30px;
 }
 
-:root{
-  --custom-width: 34px;
-  --custom-height: 34px;
-}
 
 .board-row:after {
   clear: both;
@@ -22,6 +19,46 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+.rowcoordinate {
+  background: #fff;
+  border: 1px solid#999;
+  float: left;
+  font-size: 10px;
+  /* font-weight: bold; */
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 17px;
+}
+
+.columncoordinate {
+  background: #fff;
+  border: 1px solid#999;
+  float: left;
+  font-size: 10px;
+  /* font-weight: bold; */
+  line-height: 17px;
+  height: 17px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emptysquare {
+  border: 1px solid #999;
+  background: #fff;
+  height: 17px;
+  width: 17px;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -29,53 +66,13 @@ ol, ul {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  /* margin-right: -1px;
-  margin-top: -1px; */
+  height: 36px;
+  margin-right: -1px;
+  margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 36px;
 }
-
-.rowCoordinate {
-  background: #fff;
-  /* border: 1px solid #999; */
-  float: left;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 17px;
-  height: 17px;
-  /* margin-right: 0.5px;
-  margin-left: -0.5px; */
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.columnCoordinate {
-  background: #fff;
-  /* border: 1px solid #999; */
-  float: left;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  /* margin-right: -1px;
-  margin-top: -1px; */
-  padding: 0;
-  text-align: center;
-  width: 17px;
-}
-
-.cornerCoordinate {
-  /* border: 1px solid #999; */
-  float: left;
-  /* margin-right: -1px;
-  margin-top: 0px; */
-  height: 17px;
-  width: 17px;
-}
-
 
 .square:focus {
   outline: none;
@@ -93,3 +90,4 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+

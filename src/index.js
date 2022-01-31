@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { unstable_concurrentAct } from 'react-dom/cjs/react-dom-test-utils.production.min';
 import './index.css';
 
 function Square(props){

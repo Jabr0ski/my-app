@@ -7,6 +7,11 @@ ol, ul {
   padding-left: 30px;
 }
 
+:root{
+  --custom-width: 34px;
+  --custom-height: 34px;
+}
+
 .board-row:after {
   clear: both;
   content: "";
@@ -25,12 +30,52 @@ ol, ul {
   font-weight: bold;
   line-height: 34px;
   height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  /* margin-right: -1px;
+  margin-top: -1px; */
   padding: 0;
   text-align: center;
   width: 34px;
 }
+
+.rowCoordinate {
+  background: #fff;
+  /* border: 1px solid #999; */
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 17px;
+  height: 17px;
+  /* margin-right: 0.5px;
+  margin-left: -0.5px; */
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.columnCoordinate {
+  background: #fff;
+  /* border: 1px solid #999; */
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  /* margin-right: -1px;
+  margin-top: -1px; */
+  padding: 0;
+  text-align: center;
+  width: 17px;
+}
+
+.cornerCoordinate {
+  /* border: 1px solid #999; */
+  float: left;
+  /* margin-right: -1px;
+  margin-top: 0px; */
+  height: 17px;
+  width: 17px;
+}
+
 
 .square:focus {
   outline: none;
